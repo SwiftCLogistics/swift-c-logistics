@@ -10,6 +10,7 @@
             font-family: Arial, sans-serif;
             background-color: #f4f6f9;
             color: #333;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -29,6 +30,21 @@
 
         header p {
             font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #00509e;
         }
 
         nav {
@@ -49,7 +65,7 @@
         }
 
         section {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
@@ -57,18 +73,16 @@
             color: #003366;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #003366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
         }
 
-        .btn:hover {
-            background: #00509e;
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
         }
 
         footer {
@@ -91,9 +105,43 @@
 <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#gallery">Operations</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
     <h2>About Us</h2>
-    <p>We are a Third Party Logistics Broker Company provi
+    <p>We are a Third Party Logistics Broker Company providing efficient freight solutions across all 48 states of the USA.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <p>We handle Drayage services for Import and Export, ensuring fast and secure container movement nationwide.</p>
+</section>
+
+<section id="gallery">
+    <h2>Our Operations</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1601582589907-f92af5ed9db8" alt="Shipping Containers">
+        <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec" alt="Truck with Container">
+        <img src="https://images.unsplash.com/photo-1590496793929-36417d3117de" alt="Warehouse">
+        <img src="https://images.unsplash.com/photo-1581091870627-3aef3f9c1f6c" alt="Rail Yard Containers">
+        <img src="https://images.unsplash.com/photo-1581091012184-5c1a3b1d5f6f" alt="Forklift Moving Container">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email:
+        <a href="mailto:swiftclogistic@gmail.com">
+        swiftclogistic@gmail.com
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Swift C Logistics | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
