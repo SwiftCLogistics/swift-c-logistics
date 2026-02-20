@@ -10,7 +10,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI', sans-serif;
+font-family:Arial, sans-serif;
 scroll-behavior:smooth;
 }
 
@@ -34,15 +34,14 @@ z-index:1000;
 
 header h1{
 font-size:24px;
-font-weight:700;
+font-weight:bold;
 }
 
 nav a{
 margin-left:25px;
 text-decoration:none;
 color:#334155;
-font-weight:600;
-transition:0.3s;
+font-weight:bold;
 }
 
 nav a:hover{
@@ -60,7 +59,7 @@ text-align:center;
 }
 
 .hero h2{
-background:rgba(255,255,255,0.92);
+background:rgba(255,255,255,0.9);
 padding:30px 45px;
 border-radius:10px;
 font-size:40px;
@@ -93,11 +92,6 @@ padding:30px;
 border-radius:12px;
 width:280px;
 box-shadow:0 10px 25px rgba(0,0,0,0.06);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
 }
 
 .card h3{
@@ -105,33 +99,7 @@ margin-bottom:15px;
 color:#2563eb;
 }
 
-/* SLIDER */
-.slider{
-max-width:1000px;
-margin:50px auto 0;
-overflow:hidden;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-.slides{
-display:flex;
-width:300%;
-animation:slide 15s infinite;
-}
-
-.slides img{
-width:100%;
-}
-
-@keyframes slide{
-0%{margin-left:0;}
-33%{margin-left:-100%;}
-66%{margin-left:-200%;}
-100%{margin-left:0;}
-}
-
-/* DIRECTOR SECTION */
+/* DIRECTOR */
 .director{
 padding:100px 10%;
 background:#f1f5f9;
@@ -199,7 +167,7 @@ text-align:center;
 .contact a{
 color:#2563eb;
 text-decoration:none;
-font-weight:600;
+font-weight:bold;
 }
 
 /* WHATSAPP */
@@ -212,7 +180,7 @@ color:white;
 padding:14px 20px;
 border-radius:40px;
 text-decoration:none;
-font-weight:600;
+font-weight:bold;
 box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 </style>
@@ -259,24 +227,16 @@ box-shadow:0 8px 20px rgba(0,0,0,0.15);
 </div>
 </div>
 
-<div class="slider">
-<div class="slides">
-<img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg">
-<img src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg">
-<img src="https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg">
-</div>
-</div>
-
 </section>
 
 <section class="director" id="director">
 <h2>Our Leadership</h2>
 
 <div class="director-card">
-<img src="pic.JPG" alt="Director">
+<img src="pic.jpg" alt="Alex">
 
 <div class="director-info">
-<h3>Your Name Here</h3>
+<h3>Alex</h3>
 <span>Director</span>
 <p>
 Driving operational excellence and strategic growth at Swift C Logistics. 
