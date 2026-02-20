@@ -7,10 +7,10 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
-body{background:#fff;color:#1e293b;}
+body{background:#ffffff;color:#1e293b;}
 
 header{
-background:#fff;
+background:#ffffff;
 padding:20px 10%;
 display:flex;
 justify-content:space-between;
@@ -33,11 +33,10 @@ background:#f1f5f9;
 display:flex;
 justify-content:center;
 align-items:center;
-text-align:center;
 }
 
 .hero h2{
-font-size:40px;
+font-size:38px;
 background:white;
 padding:25px 40px;
 border-radius:10px;
@@ -47,11 +46,6 @@ box-shadow:0 10px 30px rgba(0,0,0,0.1);
 .section{
 padding:80px 10%;
 text-align:center;
-}
-
-.section h2{
-font-size:32px;
-margin-bottom:30px;
 }
 
 .services{
@@ -69,13 +63,8 @@ border-radius:12px;
 box-shadow:0 10px 25px rgba(0,0,0,0.05);
 }
 
-.card h3{
-color:#2563eb;
-margin-bottom:10px;
-}
-
 .director{
-padding:90px 10%;
+padding:100px 10%;
 background:#f1f5f9;
 text-align:center;
 }
@@ -85,20 +74,24 @@ display:flex;
 flex-wrap:wrap;
 justify-content:center;
 align-items:center;
-gap:40px;
+gap:50px;
 background:white;
-padding:40px;
+padding:50px;
 border-radius:15px;
 max-width:900px;
 margin:auto;
-box-shadow:0 15px 40px rgba(0,0,0,0.08);
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
 }
 
-.director-card img{
+/* 🔥 IMAGE AS BACKGROUND */
+.director-photo{
 width:220px;
 height:220px;
-object-fit:cover;
 border-radius:15px;
+background-image:url("pic.jpg");
+background-size:cover;
+background-position:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 .director-info{
@@ -108,4 +101,93 @@ text-align:left;
 
 .director-info h3{
 font-size:24px;
-margin-b
+margin-bottom:8px;
+}
+
+.director-info span{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:6px 14px;
+border-radius:20px;
+font-size:13px;
+margin-bottom:12px;
+}
+
+.contact{
+padding:70px 10%;
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:12px 18px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Swift C Logistics</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#director">Director</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Reliable & Professional Freight Services</h2>
+</section>
+
+<section class="section" id="about">
+<h2>About Us</h2>
+<p>Swift C Logistics provides professional freight and logistics solutions.</p>
+</section>
+
+<section class="section" id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="card"><h3>Freight Transport</h3></div>
+<div class="card"><h3>Container Handling</h3></div>
+<div class="card"><h3>Warehouse Solutions</h3></div>
+</div>
+</section>
+
+<section class="director" id="director">
+<h2>Our Leadership</h2>
+<div class="director-card">
+
+<div class="director-photo"></div>
+
+<div class="director-info">
+<h3>Alex</h3>
+<span>Director</span>
+<p>
+Driving operational excellence and strategic growth at Swift C Logistics.
+Committed to delivering reliable and professional logistics services.
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p>Email: swiftclogistic@gmail.com</p>
+<p>Phone: +91 7696698980</p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/917696698980">Chat on WhatsApp</a>
+
+</body>
+</html>
