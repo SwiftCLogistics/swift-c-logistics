@@ -1,174 +1,186 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Swift C Logistics | Freight Broker USA</title>
+<title>Swift C Logistics | Freight Broker USA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Swift C Logistics is a Freight Broker and Third Party Logistics Company providing drayage services across all 48 states of the USA.">
-    <meta name="keywords" content="Freight Broker USA, Drayage Services, Third Party Logistics, Container Transport, Swift C Logistics">
-    <meta name="author" content="Swift C Logistics">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            scroll-behavior: smooth;
-        }
+body{
+font-family:'Montserrat',sans-serif;
+background:#f5f7fa;
+color:#333;
+}
 
-        header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-            url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 120px 20px;
-        }
+nav{
+background:#0a1f44;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-        header h1 {
-            font-size: 48px;
-            margin: 0;
-        }
+.logo{
+font-size:24px;
+font-weight:800;
+color:white;
+letter-spacing:1px;
+}
 
-        header p {
-            font-size: 20px;
-            margin: 15px 0;
-        }
+.logo span{
+color:#00bfff;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #003366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 15px;
-        }
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
 
-        .btn:hover {
-            background: #00509e;
-        }
+header{
+background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+url('https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg');
+background-size:cover;
+background-position:center;
+text-align:center;
+color:white;
+padding:150px 20px;
+}
 
-        nav {
-            background: #003366;
-            padding: 15px;
-            text-align: center;
-        }
+header h1{
+font-size:48px;
+margin-bottom:15px;
+}
 
-        nav a {
-            color: white;
-            margin: 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+header p{
+font-size:18px;
+margin-bottom:25px;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+}
 
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
+section{
+padding:80px 20px;
+text-align:center;
+}
 
-        h2 {
-            color: #003366;
-        }
+h2{
+margin-bottom:20px;
+color:#0a1f44;
+}
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 30px;
-        }
+.service-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+margin-top:40px;
+}
 
-        .gallery img {
-            width: 100%;
-            border-radius: 8px;
-        }
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
 
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
+footer{
+background:#0a1f44;
+color:white;
+text-align:center;
+padding:25px;
+}
 
-        /* WhatsApp Button */
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            padding: 15px 18px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
-
-        .whatsapp:hover {
-            background-color: #1ebe5d;
-        }
-    </style>
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:14px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Swift C Logistics</h1>
-    <p>Reliable Freight Broker & Third Party Logistics Across USA</p>
-    <a class="btn" href="#contact">Request a Quote</a>
-</header>
-
 <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Operations</a>
-    <a href="#contact">Contact</a>
+<div class="logo">Swift C <span>Logistics</span></div>
+<div>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
 
+<header>
+<h1>Nationwide Freight Brokerage</h1>
+<p>Reliable Import & Export Drayage Services Across All 48 States</p>
+<a href="#contact" class="btn">Request Quote</a>
+</header>
+
 <section id="about">
-    <h2>About Us</h2>
-    <p>We are a Third Party Logistics Broker Company providing efficient freight solutions across all 48 states of the USA.</p>
+<h2>About Swift C Logistics</h2>
+<p>We are a trusted Third Party Logistics company providing container transportation and freight brokerage solutions across the United States.</p>
 </section>
 
 <section id="services">
-    <h2>Our Services</h2>
-    <p>We handle Drayage services for Import and Export, ensuring fast and secure container movement nationwide.</p>
-</section>
+<h2>Our Core Services</h2>
 
-<section id="gallery">
-    <h2>Our Operations</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1601582589907-f92af5ed9db8" alt="Shipping Containers">
-        <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec" alt="Truck with Container">
-        <img src="https://images.unsplash.com/photo-1590496793929-36417d3117de" alt="Warehouse">
-        <img src="https://images.unsplash.com/photo-1581091870627-3aef3f9c1f6c" alt="Rail Yard Containers">
-        <img src="https://images.unsplash.com/photo-1581091012184-5c1a3b1d5f6f" alt="Forklift Moving Container">
-    </div>
+<div class="service-cards">
+<div class="card">
+<h3>Import Drayage</h3>
+<p>Fast and secure port-to-warehouse container movement.</p>
+</div>
+
+<div class="card">
+<h3>Export Drayage</h3>
+<p>Reliable export container handling and port delivery.</p>
+</div>
+
+<div class="card">
+<h3>Freight Brokerage</h3>
+<p>Nationwide freight coordination with trusted carriers.</p>
+</div>
+</div>
+
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email:
-        <a href="mailto:swiftclogistic@gmail.com">
-            swiftclogistic@gmail.com
-        </a>
-    </p>
+<h2>Contact Our Operations Team</h2>
+
+<p>
+Swift C Logistics<br>
+Operations Department<br>
+<a href="mailto:swiftclogistic@gmail.com">
+swiftclogistic@gmail.com
+</a>
+</p>
+
 </section>
 
 <footer>
-    <p>© 2026 Swift C Logistics | All Rights Reserved</p>
+© 2026 Swift C Logistics | Serving All 48 States USA
 </footer>
 
-<!-- WhatsApp Floating Button -->
 <a class="whatsapp" href="https://wa.me/917696698980" target="_blank">
-    Chat on WhatsApp
+WhatsApp Us
 </a>
 
 </body>
