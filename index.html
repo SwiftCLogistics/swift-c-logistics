@@ -33,6 +33,7 @@ background:#f1f5f9;
 display:flex;
 justify-content:center;
 align-items:center;
+text-align:center;
 }
 
 .hero h2{
@@ -83,14 +84,11 @@ margin:auto;
 box-shadow:0 20px 40px rgba(0,0,0,0.08);
 }
 
-/* 🔥 IMAGE AS BACKGROUND */
-.director-photo{
+.director-card img{
 width:220px;
 height:220px;
+object-fit:cover;
 border-radius:15px;
-background-image:url("pic.jpg");
-background-size:cover;
-background-position:center;
 box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
@@ -167,7 +165,8 @@ font-weight:bold;
 <h2>Our Leadership</h2>
 <div class="director-card">
 
-<div class="director-photo"></div>
+<!-- 🔥 ABSOLUTE IMAGE PATH -->
+<img src="https://swiftclogistics.github.io/swift-c-logistics/pic.jpg" alt="Alex">
 
 <div class="director-info">
 <h3>Alex</h3>
