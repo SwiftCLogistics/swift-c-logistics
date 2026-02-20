@@ -11,19 +11,22 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
+background:linear-gradient(to right,#0f172a,#1e293b);
 color:white;
 }
 
+/* HEADER */
 header{
 background:#0b1220;
-padding:20px 0;
+padding:20px;
 text-align:center;
 position:sticky;
 top:0;
+z-index:1000;
 }
 
 header h1{
@@ -40,35 +43,54 @@ color:white;
 text-decoration:none;
 margin:0 15px;
 font-weight:bold;
+transition:0.3s;
 }
 
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
 .hero{
 height:90vh;
-background:url('https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg') no-repeat center/cover;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+background:url('https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg') no-repeat center/cover;
+animation:zoom 15s infinite alternate;
+}
+
+@keyframes zoom{
+0%{background-size:100%;}
+100%{background-size:110%;}
 }
 
 .hero h2{
 font-size:48px;
 background:rgba(0,0,0,0.6);
-padding:20px;
-border-radius:10px;
+padding:25px;
+border-radius:12px;
+animation:fadeIn 2s ease-in-out;
 }
 
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+/* SECTIONS */
 .section{
-padding:70px 10%;
+padding:80px 10%;
 text-align:center;
 }
 
 .section h2{
-margin-bottom:40px;
 font-size:36px;
+margin-bottom:40px;
 }
 
+/* SERVICES */
 .services{
 display:flex;
 justify-content:center;
@@ -81,25 +103,42 @@ background:#1e293b;
 padding:30px;
 border-radius:15px;
 width:300px;
-transition:0.3s;
+transition:0.4s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-12px);
+box-shadow:0 15px 30px rgba(0,0,0,0.5);
 }
 
-.image-section{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.image-section img{
-width:350px;
+/* IMAGE SLIDER */
+.slider{
+position:relative;
+width:100%;
+max-width:1000px;
+margin:auto;
+overflow:hidden;
 border-radius:15px;
 }
 
+.slides{
+display:flex;
+width:300%;
+animation:slide 15s infinite;
+}
+
+.slides img{
+width:100%;
+}
+
+@keyframes slide{
+0%{margin-left:0;}
+33%{margin-left:-100%;}
+66%{margin-left:-200%;}
+100%{margin-left:0;}
+}
+
+/* CONTACT */
 .contact{
 background:#111827;
 padding:60px 10%;
@@ -111,16 +150,23 @@ color:#38bdf8;
 text-decoration:none;
 }
 
+/* WHATSAPP */
 .whatsapp-btn{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:15px 20px;
+padding:15px 22px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+transform:scale(1.1);
 }
 </style>
 </head>
@@ -142,7 +188,7 @@ font-weight:bold;
 
 <section class="section" id="about">
 <h2>About Us</h2>
-<p>Swift C Logistics provides reliable trucking, container transport, and freight management solutions across regions. We ensure safe, fast, and professional delivery services.</p>
+<p>Swift C Logistics delivers trusted freight transport, container handling, and supply chain solutions. We ensure safe, fast, and professional service every time.</p>
 </section>
 
 <section class="section" id="services">
@@ -151,26 +197,28 @@ font-weight:bold;
 <div class="services">
 <div class="card">
 <h3>Freight Transport</h3>
-<p>Secure and on-time transportation services.</p>
+<p>On-time and secure trucking solutions.</p>
 </div>
 
 <div class="card">
 <h3>Container Handling</h3>
-<p>Efficient container yard and port operations.</p>
+<p>Efficient port & yard management services.</p>
 </div>
 
 <div class="card">
 <h3>Warehouse Solutions</h3>
-<p>Safe storage and distribution services.</p>
+<p>Safe storage and distribution operations.</p>
 </div>
 </div>
 
 <br><br>
 
-<div class="image-section">
+<div class="slider">
+<div class="slides">
 <img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg" alt="Shipping Containers">
 <img src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg" alt="Container Yard">
 <img src="https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg" alt="Container Vessel">
+</div>
 </div>
 
 </section>
