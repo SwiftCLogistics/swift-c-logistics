@@ -4,189 +4,50 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Swift C Logistics</title>
-
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
-body{background:#ffffff;color:#1e293b;}
-
-header{
+body{
+margin:0;
+font-family:Arial;
 background:#ffffff;
-padding:20px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
+text-align:center;
 }
-
-header h1{font-size:24px;}
-
-nav a{
-margin-left:20px;
-text-decoration:none;
-color:#333;
-font-weight:bold;
-}
-
-.hero{
-height:80vh;
+header{
 background:#f1f5f9;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero h2{
-font-size:38px;
-background:white;
-padding:25px 40px;
-border-radius:10px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
-}
-
-.section{
-padding:80px 10%;
-text-align:center;
-}
-
-.services{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-}
-
-.card{
-background:#f8fafc;
-padding:25px;
-width:260px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
-}
-
-.director{
-padding:100px 10%;
-background:#f1f5f9;
-text-align:center;
-}
-
-.director-card{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-align-items:center;
-gap:50px;
-background:white;
-padding:50px;
-border-radius:15px;
-max-width:900px;
-margin:auto;
-box-shadow:0 20px 40px rgba(0,0,0,0.08);
-}
-
-.director-card img{
-width:220px;
-height:220px;
-object-fit:cover;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-.director-info{
-max-width:400px;
-text-align:left;
-}
-
-.director-info h3{
+padding:20px;
 font-size:24px;
-margin-bottom:8px;
-}
-
-.director-info span{
-display:inline-block;
-background:#2563eb;
-color:white;
-padding:6px 14px;
-border-radius:20px;
-font-size:13px;
-margin-bottom:12px;
-}
-
-.contact{
-padding:70px 10%;
-text-align:center;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:12px 18px;
-border-radius:40px;
-text-decoration:none;
 font-weight:bold;
+}
+.section{
+padding:60px 20px;
+}
+img{
+width:200px;
+border-radius:10px;
+margin-top:20px;
 }
 </style>
 </head>
-
 <body>
 
-<header>
-<h1>Swift C Logistics</h1>
-<nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#director">Director</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+<header>Swift C Logistics</header>
 
-<section class="hero">
-<h2>Reliable & Professional Freight Services</h2>
-</section>
-
-<section class="section" id="about">
+<div class="section">
 <h2>About Us</h2>
-<p>Swift C Logistics provides professional freight and logistics solutions.</p>
-</section>
-
-<section class="section" id="services">
-<h2>Our Services</h2>
-<div class="services">
-<div class="card"><h3>Freight Transport</h3></div>
-<div class="card"><h3>Container Handling</h3></div>
-<div class="card"><h3>Warehouse Solutions</h3></div>
+<p>Professional freight and logistics services.</p>
 </div>
-</section>
 
-<section class="director" id="director">
-<h2>Our Leadership</h2>
-<div class="director-card">
-
-<!-- 🔥 ABSOLUTE IMAGE PATH -->
-<img src="https://swiftclogistics.github.io/swift-c-logistics/pic.jpg" alt="Alex">
-
-<div class="director-info">
+<div class="section">
+<h2>Director</h2>
+<img src="pic.jpg">
 <h3>Alex</h3>
-<span>Director</span>
-<p>
-Driving operational excellence and strategic growth at Swift C Logistics.
-Committed to delivering reliable and professional logistics services.
-</p>
+<p>Director</p>
 </div>
 
-</div>
-</section>
-
-<section class="contact" id="contact">
-<h2>Contact Us</h2>
+<div class="section">
+<h2>Contact</h2>
 <p>Email: swiftclogistic@gmail.com</p>
 <p>Phone: +91 7696698980</p>
-</section>
-
-<a class="whatsapp" href="https://wa.me/917696698980">Chat on WhatsApp</a>
+</div>
 
 </body>
 </html>
