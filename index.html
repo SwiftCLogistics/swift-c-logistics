@@ -1,91 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Swift C Logistics | Freight Broker & 3PL</title>
+    <title>Swift C Logistics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Swift C Logistics is a nationwide drayage and freight broker company providing import and export container services across all 48 states of the USA.">
     
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #0f172a;
-            color: white;
+            background-color: #f4f6f9;
+            color: #333;
         }
 
         header {
-            background: #111827;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
 
-        header h1 {
-            color: orange;
-            margin: 0;
+        nav {
+            background: #00509e;
+            padding: 10px;
+            text-align: center;
         }
 
         nav a {
             color: white;
+            margin: 15px;
             text-decoration: none;
-            margin-left: 20px;
+            font-weight: bold;
         }
 
         nav a:hover {
-            color: orange;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(to right, #0f172a, #1e293b);
-        }
-
-        .hero h2 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            background: orange;
-            padding: 12px 25px;
-            border: none;
-            color: black;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 5px;
+            text-decoration: underline;
         }
 
         section {
-            padding: 60px 20px;
+            padding: 40px;
             text-align: center;
         }
 
-        .services div {
-            margin: 20px 0;
+        h2 {
+            color: #003366;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #00509e;
         }
 
         footer {
-            background: black;
+            background-color: #003366;
+            color: white;
             text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        input, textarea {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: none;
-        }
-
-        @media(max-width:768px){
-            .hero h2{
-                font-size:28px;
-            }
+            padding: 15px;
         }
     </style>
 </head>
@@ -93,55 +71,38 @@
 <body>
 
 <header>
-    <h1>🚛 Swift C Logistics</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <h1>Swift C Logistics</h1>
+    <p>Freight Broker & Third Party Logistics Company</p>
 </header>
 
-<div class="hero">
-    <h2>Nationwide Drayage & Freight Solutions</h2>
-    <p>Professional Import & Export Drayage Services Across All 48 States of USA</p>
-    <button class="btn">Request A Quote</button>
-</div>
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
 
 <section id="about">
     <h2>About Us</h2>
-    <p>
-        Swift C Logistics is a Third Party Logistics (3PL) Freight Broker Company 
-        specializing in container drayage, port transportation, rail yard coordination, 
-        and warehouse logistics management.
-    </p>
+    <p>We are a Third Party Logistics Broker Company handling freight movement efficiently across the United States.</p>
 </section>
 
-<section id="services" class="services">
+<section id="services">
     <h2>Our Services</h2>
-    <div>🚢 Port Container Drayage (Import & Export)</div>
-    <div>🚛 Nationwide Transportation (48 States)</div>
-    <div>🏗 Warehouse & Rail Yard Coordination</div>
+    <p>We handle Drayage services for Import and Export in all 48 states of the USA.</p>
+    <a class="btn" href="#contact">Request a Quote</a>
 </section>
 
 <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:swiftclogistic@gmail.com">
-  swiftclogistic@gmail.com
-</a>
-</p>
-    
-    <form action="mailto:<a href="mailto:swiftclogistic@gmail.com">
-                          swiftclogistic@gmail.com
-        
-        <input type="text" name="Name" placeholder="Full Name" required><br>
-        <input type="email" name="Email" placeholder="Email Address" required><br>
-        <textarea name="Details" placeholder="Shipment Details" rows="4" required></textarea><br>
-        <button class="btn" type="submit">Send Request</button>
-    </form>
+    <p>Email: 
+        <a href="mailto:swiftclogistic@gmail.com">
+        swiftclogistic@gmail.com
+        </a>
+    </p>
 </section>
 
 <footer>
-    © 2026 Swift C Logistics. All Rights Reserved.
+    <p>© 2026 Swift C Logistics | All Rights Reserved</p>
 </footer>
 
 </body>
