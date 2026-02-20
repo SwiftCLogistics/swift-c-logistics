@@ -1,134 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Swift C Logistics | Nationwide Freight Experts</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swift C Logistics</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family:Arial, sans-serif;
-background:#f4f7fb;
-color:#333;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
-nav{
-background:#0b1f3a;
-padding:15px;
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#0b1220;
+padding:20px 0;
 text-align:center;
 position:sticky;
 top:0;
 }
 
+header h1{
+font-size:28px;
+letter-spacing:1px;
+}
+
+nav{
+margin-top:10px;
+}
+
 nav a{
 color:white;
 text-decoration:none;
-margin:0 20px;
+margin:0 15px;
 font-weight:bold;
 }
 
-header{
-background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
-url('https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg');
-background-size:cover;
-background-position:center;
-color:white;
+.hero{
+height:90vh;
+background:url('https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg') no-repeat center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:160px 20px;
+padding:20px;
 }
 
-header h1{
-font-size:50px;
-margin-bottom:15px;
+.hero h2{
+font-size:48px;
+background:rgba(0,0,0,0.6);
+padding:20px;
+border-radius:10px;
 }
 
-.btn{
-display:inline-block;
-padding:14px 28px;
-background:#007bff;
-color:white;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
-}
-
-section{
-padding:80px 20px;
+.section{
+padding:70px 10%;
 text-align:center;
 }
 
-h2{
-color:#0b1f3a;
-margin-bottom:25px;
-font-size:30px;
+.section h2{
+margin-bottom:40px;
+font-size:36px;
 }
 
 .services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:30px;
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
 }
 
 .card{
-background:white;
+background:#1e293b;
 padding:30px;
-border-radius:10px;
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
+border-radius:15px;
+width:300px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
 }
 
 .image-section{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-margin-top:40px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .image-section img{
-width:100%;
-border-radius:10px;
-box-shadow:0 6px 15px rgba(0,0,0,0.1);
+width:350px;
+border-radius:15px;
 }
 
-form{
-max-width:500px;
-margin:30px auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-input, textarea{
-padding:12px;
-border-radius:5px;
-border:1px solid #ccc;
-}
-
-button{
-padding:12px;
-background:#0b1f3a;
-color:white;
-border:none;
-border-radius:5px;
-font-weight:bold;
-cursor:pointer;
-}
-
-footer{
-background:#0b1f3a;
-color:white;
+.contact{
+background:#111827;
+padding:60px 10%;
 text-align:center;
-padding:25px;
 }
 
-.whatsapp{
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+.whatsapp-btn{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:14px 20px;
-border-radius:40px;
+padding:15px 20px;
+border-radius:50px;
 text-decoration:none;
 font-weight:bold;
 }
@@ -137,78 +127,61 @@ font-weight:bold;
 
 <body>
 
+<header>
+<h1>Swift C Logistics</h1>
 <nav>
 <a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
 </nav>
-
-<header>
-<h1>Swift C Logistics</h1>
-<p>Reliable Container Drayage & Freight Brokerage Across 48 States</p>
-<a href="#contact" class="btn">Get A Free Quote</a>
 </header>
 
-<section id="about">
-<h2>About Swift C Logistics</h2>
-<p>
-We specialize in import/export container drayage and nationwide freight brokerage. 
-Our experienced dispatch team ensures safe, on-time deliveries with trusted carrier partners.
-</p>
+<section class="hero">
+<h2>Reliable & Professional Freight Services</h2>
 </section>
 
-<section id="services">
+<section class="section" id="about">
+<h2>About Us</h2>
+<p>Swift C Logistics provides reliable trucking, container transport, and freight management solutions across regions. We ensure safe, fast, and professional delivery services.</p>
+</section>
+
+<section class="section" id="services">
 <h2>Our Services</h2>
+
 <div class="services">
 <div class="card">
-<h3>Import Container Drayage</h3>
-<p>Port to warehouse fast container movement.</p>
+<h3>Freight Transport</h3>
+<p>Secure and on-time transportation services.</p>
 </div>
-<div class="card">
-<h3>Export Container Transport</h3>
-<p>Secure delivery from warehouse to port terminals.</p>
-</div>
-<div class="card">
-<h3>Freight Brokerage</h3>
-<p>Nationwide logistics coordination and carrier sourcing.</p>
-</div>
-</div>
-</section>
 
-<section>
-<h2>Our Operations</h2>
+<div class="card">
+<h3>Container Handling</h3>
+<p>Efficient container yard and port operations.</p>
+</div>
+
+<div class="card">
+<h3>Warehouse Solutions</h3>
+<p>Safe storage and distribution services.</p>
+</div>
+</div>
+
+<br><br>
 
 <div class="image-section">
 <img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg" alt="Shipping Containers">
 <img src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg" alt="Container Yard">
-<img src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg" alt="Truck Driver">
+<img src="https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg" alt="Container Vessel">
 </div>
 
 </section>
 
-<section id="contact">
+<section class="contact" id="contact">
 <h2>Contact Us</h2>
-<p>Email: 
-<a href="mailto:swiftclogistic@gmail.com">
-swiftclogistic@gmail.com
-</a>
-</p>
-
-<form action="https://formsubmit.co/swiftclogistic@gmail.com" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" rows="4" placeholder="Shipment Details" required></textarea>
-<input type="hidden" name="_captcha" value="false">
-<button type="submit">Send Request</button>
-</form>
-
+<p>Email: <a href="mailto:swiftclogistic@gmail.com">swiftclogistic@gmail.com</a></p>
+<p>Phone / WhatsApp: <a href="https://wa.me/917696698980">+91 7696698980</a></p>
 </section>
 
-<footer>
-© 2026 Swift C Logistics | All Rights Reserved
-</footer>
-
-<a class="whatsapp" href="https://wa.me/917696698980" target="_blank">
+<a class="whatsapp-btn" href="https://wa.me/917696698980" target="_blank">
 Chat on WhatsApp
 </a>
 
