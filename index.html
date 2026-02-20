@@ -8,7 +8,7 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#f4f6f9;
+background:#f4f7fb;
 color:#333;
 }
 
@@ -16,6 +16,8 @@ nav{
 background:#0b1f3a;
 padding:15px;
 text-align:center;
+position:sticky;
+top:0;
 }
 
 nav a{
@@ -26,13 +28,13 @@ font-weight:bold;
 }
 
 header{
-background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
-url('https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg');
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg');
 background-size:cover;
 background-position:center;
 color:white;
 text-align:center;
-padding:150px 20px;
+padding:160px 20px;
 }
 
 header h1{
@@ -42,8 +44,8 @@ margin-bottom:15px;
 
 .btn{
 display:inline-block;
-padding:12px 25px;
-background:#00bfff;
+padding:14px 28px;
+background:#007bff;
 color:white;
 text-decoration:none;
 border-radius:5px;
@@ -51,39 +53,41 @@ font-weight:bold;
 }
 
 section{
-padding:70px 20px;
+padding:80px 20px;
 text-align:center;
 }
 
 h2{
 color:#0b1f3a;
-margin-bottom:20px;
+margin-bottom:25px;
+font-size:30px;
 }
 
-.services, .stats{
+.services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 margin-top:30px;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
+padding:30px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
-.gallery{
+.image-section{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:40px;
 }
 
-.gallery img{
+.image-section img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
 }
 
 form{
@@ -114,7 +118,7 @@ footer{
 background:#0b1f3a;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
 }
 
 .whatsapp{
@@ -123,7 +127,7 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:14px 18px;
+padding:14px 20px;
 border-radius:40px;
 text-decoration:none;
 font-weight:bold;
@@ -136,23 +140,20 @@ font-weight:bold;
 <nav>
 <a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#tracking">Tracking</a>
-<a href="#quote">Get Quote</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <header>
 <h1>Swift C Logistics</h1>
-<p>Nationwide Freight Brokerage & Drayage Solutions</p>
-<a href="#quote" class="btn">Request a Quote</a>
+<p>Reliable Container Drayage & Freight Brokerage Across 48 States</p>
+<a href="#contact" class="btn">Get A Free Quote</a>
 </header>
 
 <section id="about">
-<h2>About Our Company</h2>
+<h2>About Swift C Logistics</h2>
 <p>
-Swift C Logistics provides reliable import & export drayage,
-container transportation, and freight brokerage services
-across all 48 states of the United States.
+We specialize in import/export container drayage and nationwide freight brokerage. 
+Our experienced dispatch team ensures safe, on-time deliveries with trusted carrier partners.
 </p>
 </section>
 
@@ -160,78 +161,47 @@ across all 48 states of the United States.
 <h2>Our Services</h2>
 <div class="services">
 <div class="card">
-<h3>Import Drayage</h3>
-<p>Fast port-to-warehouse container movement.</p>
+<h3>Import Container Drayage</h3>
+<p>Port to warehouse fast container movement.</p>
 </div>
 <div class="card">
-<h3>Export Drayage</h3>
-<p>Secure export container transport to ports.</p>
+<h3>Export Container Transport</h3>
+<p>Secure delivery from warehouse to port terminals.</p>
 </div>
 <div class="card">
 <h3>Freight Brokerage</h3>
-<p>Nationwide carrier coordination & logistics support.</p>
+<p>Nationwide logistics coordination and carrier sourcing.</p>
 </div>
 </div>
-</section>
-
-<section>
-<h2>Company Highlights</h2>
-<div class="stats">
-<div class="card"><h3>48 States</h3><p>Nationwide Coverage</p></div>
-<div class="card"><h3>500+</h3><p>Shipments Monthly</p></div>
-<div class="card"><h3>100%</h3><p>On-Time Commitment</p></div>
-</div>
-</section>
-
-<section id="tracking">
-<h2>Track Your Shipment</h2>
-<input type="text" placeholder="Enter Tracking Number">
-<button>Track Shipment</button>
 </section>
 
 <section>
 <h2>Our Operations</h2>
-<div class="gallery">
-<img src="https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg">
-<img src="https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg">
-<img src="https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg">
-<img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg">
-</div>
-</section>
 
-<section>
-<h2>Client Testimonials</h2>
-<div class="services">
-<div class="card">“Reliable and professional freight services.”</div>
-<div class="card">“Excellent communication and timely deliveries.”</div>
-<div class="card">“Trusted logistics partner across states.”</div>
+<div class="image-section">
+<img src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg" alt="Container Yard">
+<img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg" alt="Shipping Containers">
+<img src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg" alt="Truck Driver">
 </div>
-</section>
 
-<section id="quote">
-<h2>Request a Free Quote</h2>
-<form action="https://formsubmit.co/swiftclogistic@gmail.com" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" rows="4" placeholder="Shipment Details" required></textarea>
-<input type="hidden" name="_captcha" value="false">
-<button type="submit">Submit Request</button>
-</form>
 </section>
 
 <section id="contact">
 <h2>Contact Us</h2>
-<p>
-Operations Department<br>
+<p>Email: 
 <a href="mailto:swiftclogistic@gmail.com">
 swiftclogistic@gmail.com
 </a>
 </p>
 
-<iframe 
-src="https://www.google.com/maps?q=United+States&output=embed"
-width="100%" height="300" style="border:0; margin-top:20px;">
-</iframe>
+<form action="https://formsubmit.co/swiftclogistic@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="4" placeholder="Shipment Details" required></textarea>
+<input type="hidden" name="_captcha" value="false">
+<button type="submit">Send Request</button>
+</form>
+
 </section>
 
 <footer>
